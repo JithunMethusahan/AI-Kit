@@ -1,0 +1,60 @@
+#ai-widget-launcher {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background: var(--ai-bot-primary);
+    color: white; /* This turns the SVG white */
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    z-index: 999999;
+    display: flex; /* Centers the icon */
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    transition: transform 0.2s;
+  }
+  
+  #ai-widget-launcher:hover {
+    transform: scale(1.1);
+  }
+  
+  #ai-widget-container {
+    position: fixed;
+    bottom: 90px;
+    right: 20px;
+    width: 350px;
+    height: 500px;
+    background: white;
+    z-index: 999999;
+    display: none;
+    flex-direction: column;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+    border-radius: 12px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    overflow: hidden;
+    font-family: sans-serif;
+  }
+  
+  #ai-widget-header {
+    background: var(--ai-bot-primary);
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  #ai-widget-body { flex: 1; padding: 15px; overflow-y: auto; background: #f9f9f9; }
+  
+  .ai-msg { padding: 8px 12px; border-radius: 8px; margin-bottom: 8px; max-width: 80%; font-size: 14px; line-height: 1.4; }
+  .ai-msg-bot { background: #e5e7eb; align-self: flex-start; color: #000; }
+  .ai-msg-user { background: var(--ai-bot-primary); color: white; align-self: flex-end; }
+  
+  #ai-widget-input-area { padding: 10px; border-top: 1px solid #ddd; display: flex; gap: 5px; }
+  #ai-widget-input { flex: 1; padding: 10px; border: 1px solid #ddd; border-radius: 20px; outline: none; }
+  #ai-widget-send { background: var(--ai-bot-primary); color: white; border: none; padding: 8px 15px; border-radius: 20px; cursor: pointer; }
+  #ai-widget-close { background: none; border: none; color: white; cursor: pointer; font-size: 20px; }

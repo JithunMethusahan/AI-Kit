@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot Integration Test</title>
+    <style>
+        /* Basic styles to mimic a real website */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f3f4f6;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #2563eb;
+            color: white;
+            padding: 20px 40px;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        h1 { margin-top: 0; }
+        
+        button.site-btn {
+            background: #2563eb;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .checklist {
+            background: #eef2ff;
+            padding: 20px;
+            border-radius: 8px;
+            border: 1px solid #dbeafe;
+            margin-top: 20px;
+        }
+
+        code {
+            background: #eee;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: monospace;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h2>My Awesome Portfolio</h2>
+        <p>This is a fake website to test the Chatbot Overlay</p>
+    </header>
+
+    <div class="container">
+        <h1>Welcome!</h1>
+        <p>This page simulates a client's website. The chatbot should appear in the <strong>bottom right corner</strong>.</p>
+        
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+        <button class="site-btn" onclick="alert('This is a normal website button.')">Click Me (Website Action)</button>
+
+        <div class="checklist">
+            <h3>⚠️ UI Testing Checklist:</h3>
+            <ul>
+                <li><strong>1. Build:</strong> Did you run <code>node build.js</code> first?</li>
+                <li><strong>2. Icon:</strong> Do you see the round button in the bottom right?</li>
+                <li><strong>3. Popup:</strong> Click it. Does the window open smoothly?</li>
+                <li><strong>4. Mobile:</strong> Press <code>F12</code>, switch to Mobile View, and refresh. Does it go Full Screen?</li>
+            </ul>
+        </div>
+        
+        <p style="margin-top: 50px; color: #666;">
+            <em>(Scroll down to ensure the bot stays fixed on the screen)</em>
+        </p>
+        <div style="height: 500px; background: repeating-linear-gradient(45deg, #f3f4f6, #f3f4f6 10px, #fff 10px, #fff 20px);"></div>
+    </div>
+
+    <!-- 👇 THIS LINKS TO YOUR BUILT BOT 👇 -->
+    <script src="./dist/chatbot.bundle.js"></script>
+
+</body>
+</html>
