@@ -21,8 +21,8 @@ A plug-and-play AI chatbot widget that you can easily integrate into any website
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/ai-chatbot-kit.git
-   cd ai-chatbot-kit
+   git clone https://github.com/JithunMethusahan/AI-Kit.git
+   cd AI-Kit
    ```
 
 2. Install dependencies:
