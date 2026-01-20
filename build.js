@@ -4,7 +4,7 @@ const yaml = require('js-yaml');
 console.log("🚀 Starting Build...");
 
 // 1. READ CONFIG
-let config = { apiKey: "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", model: "deepseek/deepseek-r1-0528:free", botName: "Bot", primaryColor: "#000" };
+let config = { apiKey: "", model: "deepseek/deepseek-r1-0528:free", botName: "Bot", primaryColor: "#000" };
 try {
     const yamlContent = fs.readFileSync('./config.yaml', 'utf8');
     config = yaml.load(yamlContent);
