@@ -2,7 +2,7 @@
     // --- INJECTED_CONFIG_PLACEHOLDER --- 
   
     // 1. INJECT STYLES
-    const color = config.primaryColor || "#000000";
+    const color = config.primaryColor || "#4712f3";
     const styleTag = document.createElement('style');
     styleTag.innerHTML = `
       :root { --ai-bot-primary: ${color}; }
@@ -35,24 +35,44 @@
     `;
     document.body.appendChild(wrapper);
   
-    // 3. LOGIC
+    // 3. APPLY MODE
+    const isFullscreen = config.mode === 'fullscreen';
+    if (isFullscreen) {
+      document.body.classList.add('fullscreen');
+    }
+  
+    // 4. LOGIC
     const container = document.getElementById('ai-widget-container');
     const launcher = document.getElementById('ai-widget-launcher');
     const closeBtn = document.getElementById('ai-widget-close');
     
-    launcher.onclick = () => {
+    if (!isFullscreen) {
+      // Popup mode logic
+      launcher.onclick = () => {
         container.style.display = 'flex';
         launcher.style.display = 'none';
         setTimeout(() => container.style.opacity = '1', 10);
-    };
-    
-    closeBtn.onclick = () => {
+      };
+      
+      closeBtn.onclick = () => {
         container.style.opacity = '0';
         setTimeout(() => {
-            container.style.display = 'none';
-            launcher.style.display = 'flex';
+          container.style.display = 'none';
+          launcher.style.display = 'flex';
         }, 300);
-    };
+      };
+    } else {
+      // Fullscreen mode logic - close button minimizes to launcher
+      closeBtn.onclick = () => {
+        document.body.classList.remove('fullscreen');
+        container.style.display = 'none';
+        launcher.style.display = 'flex';
+      };
+      
+      // In fullscreen mode, show the container immediately
+      container.style.display = 'flex';
+      setTimeout(() => container.style.opacity = '1', 10);
+    }
   
     const sendBtn = document.getElementById('ai-widget-send');
     const inputEl = document.getElementById('ai-widget-input');
