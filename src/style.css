@@ -13,14 +13,14 @@
     display: flex; /* Centers the icon */
     align-items: center;
     justify-content: center;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    box-shadow: 0 4px 10px rgb(31, 7, 244);
     transition: transform 0.2s;
   }
-  
+
   #ai-widget-launcher:hover {
     transform: scale(1.1);
   }
-  
+
   #ai-widget-container {
     position: fixed;
     bottom: 90px;
@@ -31,12 +31,40 @@
     z-index: 999999;
     display: none;
     flex-direction: column;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+    box-shadow: 0 5px 20px rgb(73, 73, 73);
     border-radius: 12px;
     opacity: 0;
     transition: opacity 0.3s ease;
     overflow: hidden;
     font-family: sans-serif;
+  }
+
+  /* Fullscreen mode styles */
+  .fullscreen #ai-widget-launcher {
+    display: none; /* Hide launcher in fullscreen mode */
+  }
+
+  .fullscreen #ai-widget-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    bottom: auto;
+    right: auto;
+    border-radius: 0;
+    z-index: 999999;
+    display: flex; /* Always visible in fullscreen */
+    opacity: 1;
+  }
+
+  .fullscreen #ai-widget-container #ai-widget-body {
+    flex: 1;
+    padding: 20px;
+  }
+
+  .fullscreen #ai-widget-container #ai-widget-input-area {
+    padding: 15px 20px;
   }
   
   #ai-widget-header {
