@@ -1,4 +1,5 @@
 # 🤖 AI Chatbot Kit
+
 <img width="1280" height="640" alt="AI" src="https://github.com/user-attachments/assets/f11c652b-9818-4620-a708-79571b78ecea" />
 
 A plug-and-play AI chatbot widget that you can easily integrate into any website. Powered by OpenRouter's API, this kit allows you to create a custom AI assistant with your own knowledge base and branding.
@@ -32,10 +33,11 @@ A plug-and-play AI chatbot widget that you can easily integrate into any website
    ```
 
 3. Configure your bot:
-   ```bash
-   cp config.yaml.example config.yaml
+   Create a `.env` file in the root directory:
    ```
-   Edit `config.yaml` with your API key and preferences.
+   API_KEY=your_openrouter_api_key_here
+   ```
+   Edit `config.yaml` for other settings like model and appearance.
 
 4. Add your knowledge base (optional):
    Edit `knowledge.txt` with context information for your bot.
@@ -65,11 +67,8 @@ Add the generated script to your website:
 
 ## ⚙️ Configuration
 
-Edit `config.yaml` to customize:
-
-- **API Settings**: API key and model selection
-- **Appearance**: Bot name, colors, fonts
-- **Behavior**: Welcome message, display mode
+- **API Key**: Set `API_KEY` in `.env` file (get from [OpenRouter](https://openrouter.ai/keys))
+- **Other Settings**: Edit `config.yaml` to customize model, appearance, and behavior
 
 Available free models include:
 - `deepseek/deepseek-r1-0528:free`
@@ -80,7 +79,7 @@ Available free models include:
 
 Use the included test files:
 
-- `debug.html`: Test API connection
+- `dist/debug.html`: Test API connection (generated during build)
 - `test.html`: Preview the widget
 
 ## 📁 Project Structure
@@ -89,12 +88,15 @@ Use the included test files:
 ├── src/
 │   ├── widget.js      # Main widget logic
 │   └── style.css      # Widget styles
-├── config.yaml.example # Configuration template
-├── knowledge.txt       # Knowledge base template
-├── build.js            # Build script
-├── debug.html          # API testing tool
-├── test.html           # Widget preview
-└── dist/               # Built output (generated)
+├── .env               # API key (not committed)
+├── config.yaml        # Configuration settings
+├── knowledge.txt      # Knowledge base
+├── build.js           # Build script
+├── debug.html         # Debug template (processed during build)
+├── test.html          # Widget preview
+└── dist/              # Built output (generated)
+    ├── chatbot.bundle.js
+    └── debug.html
 ```
 
 ## 🤝 Contributing
