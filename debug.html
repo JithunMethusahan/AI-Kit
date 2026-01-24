@@ -12,12 +12,12 @@
 </head>
 <body>
     <h1>🚨 Connection Debugger</h1>
-    <div class="warning">⚠️ EDIT THIS FILE AND PASTE YOUR API KEY BELOW</div>
+    <div class="warning">⚠️ This file is processed during build - API key is injected from .env</div>
     <button onclick="runTest()">TEST CONNECTION</button>
     <div id="log">Waiting...</div>
     <script>
-        // 👇 PASTE KEY HERE
-        const API_KEY = ""; 
+        // 👇 API KEY WILL BE INJECTED HERE
+        const API_KEY = process.env.API_KEY;
         
         async function runTest() {
             const logArea = document.getElementById('log');
