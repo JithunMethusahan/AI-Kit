@@ -1,6 +1,6 @@
 # 🤖 AI Chatbot Kit
 
-<img width="707" height="353" alt="AI-removebg-preview" src="https://github.com/user-attachments/assets/870c26a1-7949-40db-a668-74d550899525" />
+<img width="834" height="416" alt="image" src="https://github.com/user-attachments/assets/53bef881-f9b5-4f39-88e9-6e1540335ec4" />
 
 
 A plug-and-play AI chatbot widget that you can easily integrate into any website. Powered by OpenRouter's API, this kit allows you to create a custom AI assistant with your own knowledge base and branding.
@@ -111,20 +111,18 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 🙏 Acknowledgments
 
 - Powered by [OpenRouter](https://openrouter.ai/)
-- Built with modern web technologies
-code
-Html
-<script src="https://your-website.com/wp-content/uploads/chatbot.bundle.js"></script>
-🛠 Troubleshooting
+
+## 🛠 Troubleshooting
 "Failed to fetch" Error?
 If testing on your local computer, you must use a Local Server.
+
 VS Code: Right-click your HTML file -> "Open with Live Server".
 Python: Run python -m http.server.
+
 Do not just double-click the HTML file.
 Bot gives generic answers?
+
 Check your knowledge.txt. Make sure you re-ran node build.js after saving your changes.
-code
-Code
 ---
 
 ### 3. How to Distribute (Sell or Share)
