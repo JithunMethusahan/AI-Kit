@@ -1,6 +1,7 @@
 # 🤖 AI Chatbot Kit
 
-<img width="1280" height="640" alt="AI" src="https://github.com/user-attachments/assets/f11c652b-9818-4620-a708-79571b78ecea" />
+<img width="707" height="353" alt="AI-removebg-preview" src="https://github.com/user-attachments/assets/870c26a1-7949-40db-a668-74d550899525" />
+
 
 A plug-and-play AI chatbot widget that you can easily integrate into any website. Powered by OpenRouter's API, this kit allows you to create a custom AI assistant with your own knowledge base and branding.
 
