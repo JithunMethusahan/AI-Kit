@@ -13,10 +13,6 @@ A plug-and-play AI chatbot widget that you can easily integrate into any website
 - **RAG Support**: Include custom knowledge for context-aware responses
 - **Lightweight**: Minimal footprint, no external dependencies in production
 
-## Official Hosted Version
-You can see a demo beofe try it out yourself!
-
-Find the official hosted version of AI - KIT here.
 
 ## Quick Start
 
