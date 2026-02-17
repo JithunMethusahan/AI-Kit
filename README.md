@@ -1,11 +1,11 @@
-# 🤖 AI Chatbot Kit
+# AI - Kit
 
 <img width="834" height="416" alt="image" src="https://github.com/user-attachments/assets/53bef881-f9b5-4f39-88e9-6e1540335ec4" />
 
 
 A plug-and-play AI chatbot widget that you can easily integrate into any website. Powered by OpenRouter's API, this kit allows you to create a custom AI assistant with your own knowledge base and branding.
 
-## ✨ Features
+## Features
 
 - **Easy Integration**: Add to any website with a single script tag
 - **Customizable**: Configure appearance, behavior, and knowledge base
@@ -13,7 +13,12 @@ A plug-and-play AI chatbot widget that you can easily integrate into any website
 - **RAG Support**: Include custom knowledge for context-aware responses
 - **Lightweight**: Minimal footprint, no external dependencies in production
 
-## 🚀 Quick Start
+## Official Hosted Version
+You can see a demo beofe try it out yourself!
+
+Find the official hosted version of AI - KIT here.
+
+## Quick Start
 
 ### Prerequisites
 
@@ -76,14 +81,14 @@ Available free models include:
 - `mistralai/devstral-2512:free`
 - And many more (see [OpenRouter models](https://openrouter.ai/models))
 
-## 🧪 Testing
+## Testing
 
 Use the included test files:
 
 - `dist/debug.html`: Test API connection (generated during build)
 - `test.html`: Preview the widget
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 ├── src/
@@ -100,19 +105,19 @@ Use the included test files:
     └── debug.html
 ```
 
-## 🤝 Contributing
+## Contributing
 
 We welcome contributions! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
 
-## 📄 License
+## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - Powered by [OpenRouter](https://openrouter.ai/)
 
-## 🛠 Troubleshooting
+## Troubleshooting
 "Failed to fetch" Error?
 If testing on your local computer, you must use a Local Server.
 
@@ -138,7 +143,7 @@ Now, your folder looks like this:
    ├── build.js
    └── README.md
 
-## 🧪 Connection Debugger (If things go wrong)
+## Connection Debugger (If things go wrong)
 
 If you have built the bot but it says "Error" or "Failed to fetch", use the included Debug Tool to find the problem.
 
