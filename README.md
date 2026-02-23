@@ -5,6 +5,10 @@
 
 A plug-and-play AI chatbot widget that you can easily integrate into any website. Powered by OpenRouter's API, this kit allows you to create a custom AI assistant with your own knowledge base and branding.
 
+## Official website
+
+This is our official website <a href="https://jithunmethusahan.github.io/AI-Kit-Docs/">here</a>.
+
 ## Features
 
 - **Easy Integration**: Add to any website with a single script tag
