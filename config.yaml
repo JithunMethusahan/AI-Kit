@@ -1,0 +1,15 @@
+# --- API CONFIGURATION ---
+# Get your key from: https://openrouter.ai/keys
+
+# Choose your model (e.g., 'liquid/lfm-40b', 'openai/gpt-3.5-turbo', 'mistralai/mistral-7b-instruct:free')
+model: "deepseek/deepseek-r1-0528:free"
+
+# --- BOT APPEARANCE ---
+botName: "grom"
+welcomeMessage: "Hello! How can I help you today?"
+primaryColor: "#000000"
+fontFamily: "Segoe UI, sans-serif"
+
+# --- DISPLAY MODE ---
+# Options: 'popup' (standard widget) or 'fullscreen' (always covers screen)
+mode: "popup"
